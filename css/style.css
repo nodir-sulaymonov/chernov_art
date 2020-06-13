@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+body{
+	background-color: #FAFAFA;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #303841;
+	text-align: center;
+	-webkit-font-smoothing:antialiased;
+	-webkit-overflow-scrolling:touch;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Roboto";
+	font-weight: 300;
+}
+h6{
+	font-size: 12px;
+	margin: 10px;
+}
+p{
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+a{
+	color: #303841;
+}
+a:hover{
+	color: #303841;
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #303841;
+}
+.centered {
+	text-align: center;
+}
