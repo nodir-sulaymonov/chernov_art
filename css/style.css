@@ -1,7 +1,7 @@
+/* specification */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
-
 body{
-	background-color: #FAFAFA;
+	background-color: #eeeeee;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: normal;
@@ -13,27 +13,98 @@ body{
 	-webkit-overflow-scrolling:touch;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: "Roboto";
 	font-weight: 300;
 }
-h6{
+ul, li{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+/* header specification */
+
+header{
+	background-color: #fafafa;
+	padding-top: 50px;
+	height: 158px;
+}
+
+.navbar-brand{
+	border: 2px solid #303841;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 10px;
+}
+.logo-up{
+	font-family: "Lato";
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #303841;
+	margin: 15px;
+}
+.logo-down{
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: normal;
 	font-size: 12px;
-	margin: 10px;
-}
-p{
-	line-height: 26px;
-	margin-bottom: 20px;
-}
-a{
+	line-height: 14px;
 	color: #303841;
 }
-a:hover{
-	color: #303841;
-	text-decoration: none;
-	padding-bottom: 5px;
-	border-bottom: 2px solid #303841;
+.menu{
+
 }
-.centered {
+
+.menu__item{
+	margin: 0 20px;
+}
+.menu__leng{
+	margin: 0 12px;
+}
+li a {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #303841;
+}
+
+/* section1 specification */
+
+
+.carousel .item {
+	color: #999;
 	text-align: center;
+	overflow: hidden;
+	min-height: 290px;
+}
+.carousel .carousel-control {
+	width: 100px;
+	background: #eeeeee;
+	font-size: 40px;
+	color: #1b1e21;
+}
+.carousel-control i {
+	font-size: 68px;
+	line-height: 42px;
+	position: absolute;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {
+	background: #555;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }

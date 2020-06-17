@@ -2,51 +2,110 @@
 <html>
 
 <head>
-    <meta charset="utf-8" charset="Content-type">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>chernov art</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+	
+	<header>
+		<div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <a id="logoUrl"  href="/" class="navbar-brand">
+                        <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
+                        <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                </div>
+                <div class="col-lg-8">
+                    <nav>
+                        <ul class="menu d-flex justify-content-end">
+                            <li class="menu__item">
+                                <a href="#">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">О ХУДОЖНИКЕ</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">ГАЛЕРЕЯ</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">СОБЫТИЯ</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="menu d-flex justify-content-center">
+                        <li class="menu__leng">
+                            <a href="#">RU</a>
+                        </li>
+                        <li class="menu__leng">
+                            <a href="#">EN</a>
+                        </li>
+                        <li class="menu__leng">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </nav>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="js/bootstrap.min.js"></script>
+	</header>
+    <section id="section_carousel" class="section-carousel">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-center m-auto">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="img-box"><img src="images/image_1.jpg" alt=""></div>
+                            </div>
+<!--                            <div class="item carousel-item">-->
+<!--                                <div class="img-box"><img src="" alt=""></div>-->
+<!--                            </div>-->
+<!--                            <div class="item carousel-item">-->
+<!--                                <div class="img-box"><img src="" alt=""></div>-->
+<!--                            </div>-->
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/all.js"></script>
 </body>
 
 </html>
