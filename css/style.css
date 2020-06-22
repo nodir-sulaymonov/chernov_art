@@ -70,13 +70,25 @@ header{
 .menu__leng{
 	margin: 0 12px;
 }
-li a {
+.menu__item  a {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;
 	color: #303841;
 }
-li a:hover {
+.menu__item a:hover {
+	text-decoration: none;
+	color: #303841;
+	border-bottom: 2px solid #303841;
+	padding-bottom: 15px;
+}
+.menu__leng  a {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #303841;
+}
+.menu__leng a:hover {
 	text-decoration: none;
 	color: #303841;
 	border-bottom: 2px solid #303841;
@@ -240,7 +252,7 @@ h1 a:hover{
 	display: block;
 	position: relative;
 	background: rgba(48, 56, 65, 0.8);
-
+	padding-bottom: 60px;
 }
 #contact::after {
 	content: "";
@@ -313,4 +325,50 @@ textarea{
 	cursor: pointer;
 	border: none;
 	margin-top: 60px;
+}
+.contact_text{
+	margin-top: 200px;
+	text-align: left;
+}
+.contact_intro{
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	margin: 20px;
+}
+.icons_item{
+	margin-right: 34px;
+}
+.icons_item a{
+	font-size: 24px;
+	color: white;
+}
+.icons_item a:hover{
+	text-decoration: none;
+	color: #9fcdff;
+}
+
+/* footer */
+
+.footer{
+	height: 208px;
+	background-color: #fafafa;
+	padding-top: 70px;
+}
+.footer_item{
+	margin-right: 41px;
+}
+.footer_item a{
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #303841;
+}
+.footer_item a:hover {
+	text-decoration: none;
+	color: #303841;
+	border-bottom: 2px solid #303841;
+	padding-bottom: 15px;
 }
