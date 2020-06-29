@@ -34,7 +34,7 @@ ul, li{
 
 header{
 	background-color: #fafafa;
-	padding-top: 50px;
+	padding-top: 40px;
 	height: 158px;
 }
 
@@ -60,9 +60,7 @@ header{
 	line-height: 14px;
 	color: #303841;
 }
-.menu{
 
-}
 
 .menu__item{
 	margin: 0 20px;
@@ -75,6 +73,7 @@ header{
 	font-size: 18px;
 	line-height: 21px;
 	color: #303841;
+	cursor: pointer;
 }
 .menu__item a:hover {
 	text-decoration: none;
@@ -150,15 +149,12 @@ header{
 .red_road{
 	border: 2px solid red;
 }
-h1 a{
+.title_main{
 	color: #D72323;
 	margin: 0;
 	text-transform: uppercase;
 }
-h1 a:hover{
-	color: #303841;
-	text-decoration: none;
-}
+
 .artist_png{
 	display: block;
 	margin-top: 88px;
@@ -354,7 +350,7 @@ textarea{
 
 .footer{
 	height: 208px;
-	background-color: #fafafa;
+	background: #EEEEEE;
 	padding-top: 70px;
 }
 .footer_item{
@@ -371,4 +367,75 @@ textarea{
 	color: #303841;
 	border-bottom: 2px solid #303841;
 	padding-bottom: 15px;
+}
+.scroll-top
+{
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: #fff;
+	background-color: #303841;;
+	line-height: 45px;
+	border-radius: 5px;
+}
+.fa-angle-up{
+	font-weight: bold;
+	color: white;
+}
+
+/*  2 page. About  page */
+
+.about_artist_text{
+	width: 650px;
+	text-align: left;
+	margin-top: 88px;
+	margin-left: 94px;
+}
+.about_second_part{
+	width: 647px;
+	text-align: left;
+}
+.part_offer{
+	margin-top: 60px;
+	width: 100%;
+}
+.tittle_about_part3{
+	font-family: "Roboto";
+	font-style: italic;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	color: rgba(215, 35, 35, 0.86);
+}
+.about_four_part{
+	width: 680px;
+	text-align: left;
+	margin-top: 60px;
+}
+.part_image{
+	margin-top: 60px;
+}
+.part_offer_text{
+	font-family: "Roboto";
+	font-style: italic;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	color: rgba(215, 35, 35, 0.86);
+	text-align: left;
+	margin-top: 60px;
+}
+.part5_text{
+	width: 610px;
+	text-align: left;
+	margin-top: 60px;
+}
+
+/* 3 page Gallery*/
+
+.space_img{
+	margin: 30px auto;
 }
