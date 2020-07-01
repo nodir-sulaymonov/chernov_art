@@ -12,9 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"></script>
@@ -25,15 +23,17 @@
 <header>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-2">
-                <a id="logoUrl" href="index.html" class="navbar-brand page-scroll">
-                    <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
-                    <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
-                </a>
+            <div class="col-lg-3">
+                <div class="brand_navbar page-scroll">
+                    <a id="logoUrl" href="index.html">
+                        <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
+                        <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-8">
-                <nav>
-                    <ul class="menu d-flex justify-content-end">
+            <div class="col-lg-9">
+                <nav class="d-flex">
+                    <ul class="d-flex ml-auto menu__link">
                         <li class="menu__item">
                             <a href="index.html" class="page_top">ГЛАВНАЯ</a>
                         </li>
@@ -50,20 +50,20 @@
                             <a class="scroll_contact">КОНТАКТЫ</a>
                         </li>
                     </ul>
+                    <div>
+                        <ul class="menu d-flex justify-content-center">
+                            <li class="menu__item">
+                                <a href="#">RU</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">EN</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
-            </div>
-            <div class="col-lg-2">
-                <ul class="menu d-flex justify-content-center">
-                    <li class="menu__leng">
-                        <a href="#">RU</a>
-                    </li>
-                    <li class="menu__leng">
-                        <a href="#">EN</a>
-                    </li>
-                    <li class="menu__leng">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
@@ -124,11 +124,11 @@
                 <div class="red_road"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col lg-4 ml-auto">
+        <div class="row artist__row">
+            <div class="col lg-4 col-md-6">
                 <img src="images/artist_photo.png" class="artist_png" alt="artist">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-6">
                 <div class="artist_text">
                     <p>
                         О нем часто говорят: «крылатый художник». Не столько потому, что у него почти 300 прыжков с
@@ -158,7 +158,7 @@
             </div>
             <div class="col-lg-4">
                 <h1 class="title_main">
-                   галерея
+                    галерея
                 </h1>
             </div>
             <div class="col lg-4">
@@ -167,7 +167,7 @@
         </div>
         <div class="row">
             <div class="row">
-                <div class="col-lg-6 thumb">
+                <div class="col-lg-6 col-md-6 thumb">
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                        data-image="images/IMG_4883.png"
                        data-target="#image-gallery">
@@ -190,7 +190,7 @@
                              alt="яхты">
                     </a>
                 </div>
-                <div class="col-lg-6 thumb">
+                <div class="col-lg-6 col-md-6 thumb">
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                        data-image="images/birds.png"
                        data-target="#image-gallery">
@@ -265,13 +265,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <img src="images/img_news.png" class="event_image_news" alt="img_news">
                 <div class="offer_event">
-                    <div class="event_tittle">
+                    <h2 class="event_tittle">
                         Выставка в одесском музее
                         западного-восточного искусства
-                    </div>
+                    </h2>
                     <div class="event_text">
                         3 октября в 16:00 в Одесском музее
                         западного и восточного искусства состоится открытия выставки памяти заслуженного хужожника
@@ -284,13 +284,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <img src="images/img_news.png" class="event_image_news" alt="img_news">
                 <div class="offer_event">
-                    <div class="event_tittle">
+                    <h2 class="event_tittle">
                         Выставка в одесском музее
                         западного-восточного искусства
-                    </div>
+                    </h2>
                     <div class="event_text">
                         3 октября в 16:00 в Одесском музее
                         западного и восточного искусства состоится открытия выставки памяти заслуженного хужожника
@@ -312,7 +312,7 @@
 <section id="contact" class="section_contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 text-left text-white">
+            <div class="col-lg-6 text-left text-white col-md-6">
                 <h1 class="contact_tittle"> контакты </h1>
                 <form method="post" id="form-contact" novalidate="novalidate">
                     <div class="form-group">
@@ -331,7 +331,7 @@
                 </form>
             </div>
             <!-- //.col-lg-6 -->
-            <div class="col-lg-6 d-flex justify-content-end text-white">
+            <div class="col-lg-6 d-flex justify-content-end text-white col-md-6">
                 <div class="contact_text">
                     <div class="contact_intro">
                         телефон: +38 (093)336 26 14
@@ -365,7 +365,7 @@
 <footer id="footer" class="footer">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <ul class="menu d-flex justify-content-start">
                     <li class="footer_item">
                         <a href="#">RU</a>
@@ -375,13 +375,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <a href="index.html" class="navbar-brand page-scroll">
                     <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
                     <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
                 </a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <ul class="icons d-flex justify-content-end">
                     <li class="footer_item">
                         <a href="#">
@@ -404,19 +404,19 @@
 <a href="#page-top" class="scroll-top"><i class="fas fa-angle-up"></i></a>
 
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-        $('.scroll_about').click(function(){
+        $('.scroll_about').click(function () {
             $('html, body').animate({scrollTop: $('.section_about').offset().top}, 1000);
         })
-        $('.scroll_gallery').click(function(){
+        $('.scroll_gallery').click(function () {
             $('html, body').animate({scrollTop: $('.section_gallery').offset().top}, 1000);
         })
 
-        $('.scroll_event').click(function(){
+        $('.scroll_event').click(function () {
             $('html, body').animate({scrollTop: $('.event_section').offset().top}, 1000);
         })
-        $('.scroll_contact').click(function(){
+        $('.scroll_contact').click(function () {
             $('html, body').animate({scrollTop: $('.section_contact').offset().top}, 1000);
         })
     });

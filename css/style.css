@@ -38,11 +38,14 @@ header{
 	height: 158px;
 }
 
-.navbar-brand{
+.brand_navbar{
 	border: 2px solid #303841;
-	box-sizing: border-box;
 	border-radius: 4px;
-	padding: 10px;
+	width: 250px;
+	height: 90px;
+}
+.brand_navbar a:hover{
+	text-decoration: none;
 }
 .logo-up{
 	font-family: "Lato";
@@ -61,12 +64,11 @@ header{
 	color: #303841;
 }
 
-
 .menu__item{
-	margin: 0 20px;
+	margin: 0 14px;
 }
-.menu__leng{
-	margin: 0 12px;
+.menu__item:last-child{
+	margin-right: 40px;
 }
 .menu__item  a {
 	font-weight: normal;
@@ -81,20 +83,9 @@ header{
 	border-bottom: 2px solid #303841;
 	padding-bottom: 15px;
 }
-.menu__leng  a {
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 21px;
-	color: #303841;
+.mobile__responsive{
+	display: flex;
 }
-.menu__leng a:hover {
-	text-decoration: none;
-	color: #303841;
-	border-bottom: 2px solid #303841;
-	padding-bottom: 15px;
-}
-
-
 /* section1 specification */
 
 
@@ -156,7 +147,7 @@ header{
 }
 
 .artist_png{
-	display: block;
+	display: flex;
 	margin-top: 88px;
 }
 .artist_text{
@@ -238,7 +229,7 @@ header{
 }
 .event_text{
 	text-align: left;
-	margin: 20px 0px;
+	margin: 20px 0;
 	width: 288px;
 }
 
@@ -439,3 +430,75 @@ textarea{
 .space_img{
 	margin: 30px auto;
 }
+
+@media only screen and (max-width: 1199px) {
+	.brand_navbar {
+		width: 190px;
+	}
+	.logo-up {
+		font-size: 16px;
+	}
+
+	.logo-down {
+		font-size: 10px;
+	}
+
+	.menu__item a {
+		font-size: 14px;
+	}
+
+	.menu__leng a {
+		font-size: 16px;
+	}
+
+	.intro_gallery {
+		width: 480px;
+		margin: 10px;
+	}
+
+	.title_main {
+		font-size: 35px;
+	}
+	.artist__wrapper{
+		width: 320px;
+	}
+	.offer_event{
+		margin-left: 24px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.artist__row{
+		align-items: center;
+	}
+	.artist_text{
+		margin-left: 0;
+		width: 340px;
+	}
+	.intro_gallery{
+		width: 345px;
+		height: 350px;
+	}
+	.event_image_news{
+		width: 340px;
+	}
+	.offer_event{
+		margin-left: 0;
+	}
+	.event_tittle{
+		font-size: 22px;
+	}
+	.contact_intro{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.container{
+		width: 540px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+	}
+}
+
