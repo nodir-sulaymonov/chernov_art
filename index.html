@@ -23,7 +23,7 @@
 <header>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3">
                 <div class="brand_navbar page-scroll">
                     <a id="logoUrl" href="index.html">
                         <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
@@ -31,7 +31,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-9 col-sm-9 d-none">
                 <nav class="d-flex">
                     <ul class="d-flex ml-auto menu__link">
                         <li class="menu__item">
@@ -70,9 +70,9 @@
 </header>
 <!--    section of carousel-->
 <section id="section_carousel" class="section-carousel">
-    <div class="container-fluid">
+    <div class="container-fluid container__carousel">
         <div class="row">
-            <div class="col-md-12 col-center m-auto">
+            <div class="col-md-12 col-md-12 col-sm-12">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
@@ -84,24 +84,32 @@
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="item carousel-item active">
-                            <div><img src="images/big_size/yaxti.jpg" alt=""></div>
+                            <div>
+                                <img class="carousel__image" src="images/big_size/yaxti.jpg" alt="">
+                            </div>
                         </div>
                         <div class="item carousel-item">
-                            <div><img src="images/big_size/autoportrait.png" alt=""></div>
+                            <div>
+                                <img class="carousel__image" src="images/big_size/autoportrait.png" alt="">
+                            </div>
                         </div>
                         <div class="item carousel-item">
-                            <div><img src="images/big_size/green_apple.png" alt=""></div>
+                            <div>
+                                <img class="carousel__image" src="images/big_size/green_apple.png" alt="">
+                            </div>
                         </div>
                         <div class="item carousel-item">
-                            <div><img src="images/big_size/son.png" alt=""></div>
+                            <div>
+                                <img class="carousel__image" src="images/big_size/son.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <!-- Carousel controls -->
                     <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <i class="fa fa-angle-left"></i>
+                        <i class="fa fa-angle-left carousel__arrow"></i>
                     </a>
                     <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-                        <i class="fa fa-angle-right"></i>
+                        <i class="fa fa-angle-right carousel__arrow"></i>
                     </a>
                 </div>
             </div>
@@ -112,23 +120,23 @@
 <section id="section_about" class="section_about">
     <div class="container">
         <div class="row padding_fromTop">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="red_road"></div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <h1 class="title_main">
                     о художники
                 </h1>
             </div>
-            <div class="col lg-4">
+            <div class="col lg-4 col-md-4">
                 <div class="red_road"></div>
             </div>
         </div>
-        <div class="row artist__row">
-            <div class="col lg-4 col-md-6">
+        <div class="row align-items-center">
+            <div class="col lg-6 col-md-6">
                 <img src="images/artist_photo.png" class="artist_png" alt="artist">
             </div>
-            <div class="col-lg-8 col-md-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="artist_text">
                     <p>
                         О нем часто говорят: «крылатый художник». Не столько потому, что у него почти 300 прыжков с
@@ -265,18 +273,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <img src="images/img_news.png" class="event_image_news" alt="img_news">
                 <div class="offer_event">
                     <h2 class="event_tittle">
                         Выставка в одесском музее
                         западного-восточного искусства
                     </h2>
-                    <div class="event_text">
+                    <p class="event_text">
                         3 октября в 16:00 в Одесском музее
                         западного и восточного искусства состоится открытия выставки памяти заслуженного хужожника
                         Украины Чернова Виктора Ивановича (1944-2017)
-                    </div>
+                    </p>
                     <div class="next_read_artist">
                         <a href="about.html">Читать дальше
                             <i class="fas fa-long-arrow-alt-right"></i>
@@ -284,18 +292,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <img src="images/img_news.png" class="event_image_news" alt="img_news">
                 <div class="offer_event">
                     <h2 class="event_tittle">
                         Выставка в одесском музее
                         западного-восточного искусства
                     </h2>
-                    <div class="event_text">
+                    <p class="event_text">
                         3 октября в 16:00 в Одесском музее
                         западного и восточного искусства состоится открытия выставки памяти заслуженного хужожника
                         Украины Чернова Виктора Ивановича (1944-2017)
-                    </div>
+                    </p>
                     <div class="next_read_artist">
                         <a href="about.html">Читать дальше
                             <i class="fas fa-long-arrow-alt-right"></i>
@@ -310,9 +318,9 @@
 <!--section contact-->
 
 <section id="contact" class="section_contact">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 text-left text-white col-md-6">
+            <div class="col-lg-6 text-left text-white col-md-6 col-sm-6">
                 <h1 class="contact_tittle"> контакты </h1>
                 <form method="post" id="form-contact" novalidate="novalidate">
                     <div class="form-group">
@@ -331,7 +339,7 @@
                 </form>
             </div>
             <!-- //.col-lg-6 -->
-            <div class="col-lg-6 d-flex justify-content-end text-white col-md-6">
+            <div class="col-lg-6 col-md-6 text-white col-sm-6">
                 <div class="contact_text">
                     <div class="contact_intro">
                         телефон: +38 (093)336 26 14
@@ -339,7 +347,7 @@
                     <div class="contact_intro">
                         e-mail: angeled@gmail.com
                     </div>
-                    <ul class="icons d-flex contact_intro">
+                    <ul class="icons icons__menu d-flex contact_intro">
                         <li class="icons_item">
                             <a href="#">
                                 <i class="fab fa-facebook-square"></i>
@@ -363,10 +371,10 @@
 <!-- footer -->
 
 <footer id="footer" class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-4">
-                <ul class="menu d-flex justify-content-start">
+            <div class="col-lg-4 col-md-4 footer__mobile">
+                <ul class="menu d-flex">
                     <li class="footer_item">
                         <a href="#">RU</a>
                     </li>
@@ -375,13 +383,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-4">
-                <a href="index.html" class="navbar-brand page-scroll">
-                    <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
-                    <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
-                </a>
+            <div class="col-lg-4 col-md-4 footer__mobile">
+                <div class="brand_navbar page-scroll">
+                    <a href="index.html">
+                        <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
+                        <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 footer__mobile">
                 <ul class="icons d-flex justify-content-end">
                     <li class="footer_item">
                         <a href="#">

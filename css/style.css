@@ -39,6 +39,7 @@ header{
 }
 
 .brand_navbar{
+	display: table-cell;
 	border: 2px solid #303841;
 	border-radius: 4px;
 	width: 250px;
@@ -102,7 +103,6 @@ header{
 	color: #1b1e21;
 }
 .carousel-control i {
-	font-size: 68px;
 	line-height: 42px;
 	position: absolute;
 	display: inline-block;
@@ -147,14 +147,12 @@ header{
 }
 
 .artist_png{
-	display: flex;
 	margin-top: 88px;
 }
 .artist_text{
 	width: 470px;
 	text-align: left;
 	margin-top: 88px;
-	margin-left: 94px;
 
 }
 .next_read_artist a{
@@ -211,30 +209,31 @@ header{
 	padding-bottom: 100px;
 }
 .event_image_news{
+	display: block;
 	width: 400px;
 	height: 300px;
 	margin-top: 60px;
 }
 .offer_event{
 	margin-top: 20px;
-	margin-left: 70px;
 	text-align: left;
 }
 .event_tittle{
 	text-transform: uppercase;
 	color: red;
-	text-align: left;
 	font-size: 24px;
 	width: 402px;
 }
 .event_text{
-	text-align: left;
-	margin: 20px 0;
+	margin-top: 20px;
 	width: 288px;
 }
 
 /* 5 section contact*/
-
+.container-fluid{
+	padding-left: 5%;
+	padding-right: 5%;
+}
 #contact{
 	display: block;
 	position: relative;
@@ -314,6 +313,7 @@ textarea{
 	margin-top: 60px;
 }
 .contact_text{
+	margin-left: 20%;
 	margin-top: 200px;
 	text-align: left;
 }
@@ -362,7 +362,7 @@ textarea{
 .scroll-top
 {
 	position: fixed;
-	right: 15px;
+	right: 20px;
 	bottom: 15px;
 	width: 50px;
 	height: 50px;
@@ -438,45 +438,43 @@ textarea{
 	.logo-up {
 		font-size: 16px;
 	}
-
 	.logo-down {
 		font-size: 10px;
 	}
-
 	.menu__item a {
 		font-size: 14px;
 	}
-
 	.menu__leng a {
 		font-size: 16px;
 	}
-
+	.carousel .carousel-control {
+		width: 80px;
+	}
+	.carousel__image{
+		height: 600px;
+	}
 	.intro_gallery {
 		width: 480px;
 		margin: 10px;
 	}
-
-	.title_main {
+	.title_main{
 		font-size: 35px;
-	}
-	.artist__wrapper{
-		width: 320px;
-	}
-	.offer_event{
-		margin-left: 24px;
 	}
 }
 @media screen and (max-width: 991px) {
-	.artist__row{
-		align-items: center;
-	}
 	.artist_text{
-		margin-left: 0;
 		width: 340px;
 	}
 	.intro_gallery{
 		width: 345px;
 		height: 350px;
+	}
+	.carousel .carousel-control {
+		width: 80px;
+	}
+	.carousel__image{
+		width: 600px;
+		height: 450px;
 	}
 	.event_image_news{
 		width: 340px;
@@ -490,15 +488,109 @@ textarea{
 	.contact_intro{
 		font-size: 18px;
 	}
+	.logo-up{
+		font-size: 14px;
+	}
+	.footer ul {
+		justify-content: center;
+	}
+	.title_main{
+		font-size: 28px;
+	}
 }
 @media screen and (max-width: 767px) {
 	.container{
 		width: 540px;
 	}
+	.carousel__image{
+		width: 560px;
+		height: 380px;
+	}
+	.artist_text{
+		margin: 88px auto;
+	}
+	.event_image_news{
+		width: 100%;
+		height: 330px;
+	}
+	.event_tittle{
+		width: 100%;
+	}
+	.event_text{
+		display: none;
+	}
+	.next_read_artist{
+		margin-top: 20px;
+	}
+	.contact_tittle{
+		width: 203px;
+		font-size: 36px;
+	}
+	::placeholder, .contact_intro {
+		font-size: 16px;
+	}
+	.contact_text{
+		margin-left: 0;
+	}
+	.btn_submit{
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+	.footer_item a{
+		font-size: 16px;
+	}
+	.footer_item:last-child{
+		margin-right: 0;
+	}
+	.footer__mobile{
+		width: 33%;
+	}
 }
 @media screen and (max-width: 575px) {
 	.container {
 		width: 100%;
+	}
+	.logo-up{
+		font-size: 12px;
+		margin: 8px;
+	}
+	.logo-down{
+		font-size: 9px;
+	}
+	.carousel__image{
+		width: 280px;
+		height: 250px;
+	}
+	.carousel .carousel-control {
+		width: 40px;
+	}
+	.carousel__arrow, .title_main{
+		font-size: 24px;
+	}
+	.artist_text p, .next_read_artist a, .link_gallery a, .event_tittle{
+		font-size: 14px;
+	}
+	.btn_submit{
+		width: 100%;
+	}
+	.contact_text{
+		margin-top: 30px;
+	}
+	.icons__menu{
+		flex-direction: column;
+		position: absolute;
+		top: 15px;
+		right: -15px;
+	}
+	.icons__menu li{
+		margin-bottom: 12px;
+	}
+	.footer_item{
+		margin-right: 18px;
+	}
+	#contact{
+		padding: 0;
+		margin: 0;
 	}
 }
 
