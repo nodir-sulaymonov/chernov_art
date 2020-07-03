@@ -21,19 +21,19 @@
 <body id="page-top">
 
 <header>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-3 col-sm-4 mobile__menu">
                 <div class="brand_navbar page-scroll">
-                    <a id="logoUrl" href="index.html">
+                    <a id="#logoUrl" href="index.html">
                         <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
                         <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-9 d-none">
-                <nav class="d-flex">
-                    <ul class="d-flex ml-auto menu__link">
+            <div class="col-lg-9 col-md-9 col-sm-8 mobile__menu">
+                <nav class="navbar__content" id="myNav">
+                    <ul class="menu__link">
                         <li class="menu__item">
                             <a href="index.html" class="page_top">ГЛАВНАЯ</a>
                         </li>
@@ -49,9 +49,7 @@
                         <li class="menu__item">
                             <a class="scroll_contact">КОНТАКТЫ</a>
                         </li>
-                    </ul>
-                    <div>
-                        <ul class="menu d-flex justify-content-center">
+                        <div class="leng__icon">
                             <li class="menu__item">
                                 <a href="#">RU</a>
                             </li>
@@ -61,9 +59,14 @@
                             <li class="menu__item">
                                 <a href="#"><i class="fas fa-search"></i></a>
                             </li>
-                        </ul>
-                    </div>
+                        </div>
+                    </ul>
                 </nav>
+                <div id="menu__click" class="container__burger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -120,15 +123,15 @@
 <section id="section_about" class="section_about">
     <div class="container">
         <div class="row padding_fromTop">
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <h1 class="title_main">
                     о художники
                 </h1>
             </div>
-            <div class="col lg-4 col-md-4">
+            <div class="col lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
         </div>
@@ -161,15 +164,15 @@
 <section id="section_gallery" class="section_gallery">
     <div class="container">
         <div class="row padding_fromTop">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <h1 class="title_main">
                     галерея
                 </h1>
             </div>
-            <div class="col lg-4">
+            <div class="col lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
         </div>
@@ -260,20 +263,20 @@
 <section id="event_section" class="event_section">
     <div class="container">
         <div class="row padding_fromTop">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <h1 class="title_main">
                     события
                 </h1>
             </div>
-            <div class="col lg-4">
+            <div class="col lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <img src="images/img_news.png" class="event_image_news" alt="img_news">
                 <div class="offer_event">
                     <h2 class="event_tittle">
@@ -292,7 +295,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <img src="images/img_news.png" class="event_image_news" alt="img_news">
                 <div class="offer_event">
                     <h2 class="event_tittle">
@@ -383,7 +386,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-4 footer__mobile">
+            <div class="col-lg-4 col-md-4 footer__mobile__center">
                 <div class="brand_navbar page-scroll">
                     <a href="index.html">
                         <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
@@ -414,6 +417,16 @@
 <a href="#page-top" class="scroll-top"><i class="fas fa-angle-up"></i></a>
 
 <script type="text/javascript">
+    function myFunction(x) {
+        x.classList.toggle("change");
+        let d = document.getElementById('myNav');
+        if(d.className === "navbar__content"){
+            d.className += "menu__link";
+        }
+        else {
+            d.className = "navbar__content";
+        }
+    }
     $(document).ready(function () {
 
         $('.scroll_about').click(function () {
