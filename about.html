@@ -22,17 +22,19 @@
 <body id="page-top">
 
 <header style="background: #EEEEEE;">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-2">
-                <a id="logoUrl" href="index.html" class="navbar-brand page-scroll">
-                    <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
-                    <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 mobile__menu">
+                <div class="brand_navbar page-scroll">
+                    <a id="#logoUrl" href="index.html">
+                        <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
+                        <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-8">
-                <nav>
-                    <ul class="menu d-flex justify-content-end">
+            <div class="col-lg-9 col-md-9 col-sm-8 mobile__menu">
+                <nav class="navbar__content" id="myNav">
+                    <ul class="menu__link">
                         <li class="menu__item">
                             <a href="index.html" class="page_top">ГЛАВНАЯ</a>
                         </li>
@@ -48,21 +50,24 @@
                         <li class="menu__item">
                             <a href="index.html#contact" class="scroll_contact">КОНТАКТЫ</a>
                         </li>
+                        <div class="leng__icon">
+                            <li class="menu__item">
+                                <a href="#">RU</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">EN</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#"><i class="fas fa-search"></i></a>
+                            </li>
+                        </div>
                     </ul>
                 </nav>
-            </div>
-            <div class="col-lg-2">
-                <ul class="menu d-flex justify-content-center">
-                    <li class="menu__leng">
-                        <a href="#">RU</a>
-                    </li>
-                    <li class="menu__leng">
-                        <a href="#">EN</a>
-                    </li>
-                    <li class="menu__leng">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                </ul>
+                <div id="menu__click" class="container__burger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -70,23 +75,23 @@
 <section id="section_about" class="section_about">
     <div class="container">
         <div class="row padding_fromTop">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <h1 class="title_main">
                     о художники
                 </h1>
             </div>
-            <div class="col lg-4">
+            <div class="col lg-4 col-md-4 col-sm-4">
                 <div class="red_road"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col lg-4 ml-auto">
+        <div class="row d-flex">
+            <div class="col-lg-4 col-sm-12">
                 <img src="images/artist_photo.png" class="artist_png" alt="artist">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-sm-12">
                 <div class="about_artist_text">
                     <p>
                         Виктор Иванович Чернов родился в г. Перми (Российская Федерация)
@@ -113,7 +118,7 @@
         </div>
 
         <div class="row">
-            <div class="col lg-7">
+            <div class="col-lg-7 col-md-12">
                 <div class="about_second_part">
                     <p>
                         О нем часто говорят: «крылатый художник». Не столько потому, что у него почти 300 прыжков с
@@ -141,26 +146,28 @@
                     </p>
                 </div>
             </div>
-            <div class="col lg-4">
-                <img src="images/натюрморт_с_хурмой.png" alt="artist">
+            <div class="col-lg-5 col-md-12">
+                <div class="part_offer">
+                    <img src="images/натюрморт_с_хурмой.png" class="part2__second__image" alt="artist">
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12">
                 <div class="part_offer">
                     <h3 class="tittle_about_part3">«Виктор Иванович ценил каждого из нас и
                         верил в то, что каждый может научиться делать то, что называется Искусством» ( ученик В. И. —
                         Чернова)</h3>
                 </div>
                 <div class="part_offer">
-                    <img src="images/autoportrait.png" alt="portret">
+                    <img src="images/autoportrait.png" class="image__cent_part2" alt="portret">
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-6 col-sm-6">
                 <div class="about_four_part">
                     <p>
                         Этот мир – мир, созданный фантазией художника, завораживает, увлекает,
@@ -189,6 +196,18 @@
                         как-то всегда удивительно
                         сочетались в нем. А, может, и не удивительно…
                     </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="part_image">
+                    <img src="images/flower.png" class="part2__four__image" alt="flower">
+                </div>
+                <p class="part_offer_text">
+                    «Вы светлый художник! Вы света певец! Мыслитель, мечтатель, философ, мудрец!» (Татяна Даневич)
+                </p>
+            </div>
+            <div class="col-lg-12">
+                <div class="about_four_part">
                     <p>
                         Но вот что интересно. Внешне Виктор Иванович производил впечатление исключительно
                         сдержанного человека. Негромкий голос, скупые жесты, немногословие, отсутствие какой бы то ни
@@ -212,20 +231,12 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="part_image">
-                    <img src="images/flower.png" alt="flower">
-                </div>
-                <p class="part_offer_text">
-                    «Вы светлый художник! Вы света певец! Мыслитель, мечтатель, философ, мудрец!» (Татяна Даневич)
-                </p>
-            </div>
         </div>
 
         <div class="row">
             <div class="col-lg-5">
                 <div class="part_image">
-                    <img src="images/pilot.png" width="400" height="436" alt="pilot">
+                    <img src="images/pilot.png" class="about__image_pilot" alt="pilot">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -246,9 +257,12 @@
                         Плохие Слова. Не будем их говорить. Будем помнить другое,
                         будем разговаривать с художником, спорить с ним, не соглашаться, восхищаться,
                         теряться в догадках, рассматривать его содержательные картины, долго и терпеливо вникать
-                        в каждую деталь. Получать удовольствие. Сопереживать. И стараться не думать о ненаписанных картинах
-                        и оставленных учениках, безутешных родных и друзьях. Будем просто думать, потому что картины Виктора
-                        Ивановича Чернова – это бесконечный и серьезный Диалог со зрителем. А если диалог, то о каком же уходе тогда может идти речь?
+                        в каждую деталь. Получать удовольствие. Сопереживать. И стараться не думать о ненаписанных
+                        картинах
+                        и оставленных учениках, безутешных родных и друзьях. Будем просто думать, потому что картины
+                        Виктора
+                        Ивановича Чернова – это бесконечный и серьезный Диалог со зрителем. А если диалог, то о каком же
+                        уходе тогда может идти речь?
                     </p>
                 </div>
             </div>
@@ -256,11 +270,11 @@
     </div>
 </section>
 
-<footer id="footer" class="footer" >
-    <div class="container">
+<footer id="footer" class="footer">
+    <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4">
-                <ul class="menu d-flex justify-content-start">
+            <div class="col-lg-4 col-md-4 footer__mobile">
+                <ul class="menu d-flex">
                     <li class="footer_item">
                         <a href="#">RU</a>
                     </li>
@@ -269,13 +283,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4">
-                <a href="index.html" class="navbar-brand page-scroll">
-                    <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
-                    <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
-                </a>
+            <div class="col-lg-4 col-md-4 footer__mobile__center">
+                <div class="brand_navbar page-scroll">
+                    <a href="index.html">
+                        <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
+                        <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 footer__mobile">
                 <ul class="icons d-flex justify-content-end">
                     <li class="footer_item">
                         <a href="#">
@@ -297,9 +313,20 @@
 </footer>
 
 <a href="#page-top" class="scroll-top"><i class="fas fa-angle-up"></i></a>
-
+<script type="text/javascript">
+    function myFunction(x) {
+        x.classList.toggle("change");
+        let d = document.getElementById('myNav');
+        if (d.className === "navbar__content") {
+            d.className += "menu__link";
+        } else {
+            d.className = "navbar__content";
+        }
+    }
+</script>
+<script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/all.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+
 </body>
 </html>

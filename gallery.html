@@ -23,17 +23,19 @@
 </head>
 <body style="background-color: #fafafa">
 <header style="background: #EEEEEE;">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-2">
-                <a id="logoUrl" href="index.html" class="navbar-brand page-scroll">
-                    <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
-                    <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 mobile__menu">
+                <div class="brand_navbar page-scroll">
+                    <a id="#logoUrl" href="index.html">
+                        <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
+                        <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-8">
-                <nav>
-                    <ul class="menu d-flex justify-content-end">
+            <div class="col-lg-9 col-md-9 col-sm-8 mobile__menu">
+                <nav class="navbar__content" id="myNav">
+                    <ul class="menu__link">
                         <li class="menu__item">
                             <a href="index.html" class="page_top">ГЛАВНАЯ</a>
                         </li>
@@ -49,21 +51,24 @@
                         <li class="menu__item">
                             <a href="index.html#contact" class="scroll_contact">КОНТАКТЫ</a>
                         </li>
+                        <div class="leng__icon">
+                            <li class="menu__item">
+                                <a href="#">RU</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">EN</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#"><i class="fas fa-search"></i></a>
+                            </li>
+                        </div>
                     </ul>
                 </nav>
-            </div>
-            <div class="col-lg-2">
-                <ul class="menu d-flex justify-content-center">
-                    <li class="menu__leng">
-                        <a href="#">RU</a>
-                    </li>
-                    <li class="menu__leng">
-                        <a href="#">EN</a>
-                    </li>
-                    <li class="menu__leng">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                </ul>
+                <div id="menu__click" class="container__burger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -88,7 +93,7 @@
         </div>
         <div class="row">
             <div class="row">
-                <div class="col-lg-6 thumb">
+                <div class="col-lg-6 col-md-6 col-sm-12 thumb">
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                        data-image="images/IMG_4883.png"
                        data-target="#image-gallery">
@@ -146,7 +151,7 @@
                              alt="naturmort">
                     </a>
                 </div>
-                <div class="col-lg-6 thumb">
+                <div class="col-lg-6 col-md-6 col-sm-12 thumb">
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
                        data-image="images/birds.png"
                        data-target="#image-gallery">
@@ -255,10 +260,10 @@
 <!--footer-->
 
 <footer id="footer" class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4">
-                <ul class="menu d-flex justify-content-start">
+            <div class="col-lg-4 col-md-4 footer__mobile">
+                <ul class="menu d-flex">
                     <li class="footer_item">
                         <a href="#">RU</a>
                     </li>
@@ -267,13 +272,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4">
-                <a href="index.html" class="navbar-brand page-scroll">
-                    <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
-                    <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
-                </a>
+            <div class="col-lg-4 col-md-4 footer__mobile__center">
+                <div class="brand_navbar page-scroll">
+                    <a href="index.html">
+                        <div class="logo-up">ВИКТОР ЧЕРНОВ</div>
+                        <div class="logo-down">ЗАСЛУЖЕННЫЙ ХУДОЖНИК УКРАИНЫ</div>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 footer__mobile">
                 <ul class="icons d-flex justify-content-end">
                     <li class="footer_item">
                         <a href="#">
@@ -294,6 +301,18 @@
     </div>
 </footer>
 <a href="#page-top" class="scroll-top"><i class="fas fa-angle-up"></i></a>
+
+<script type="text/javascript">
+    function myFunction(x) {
+        x.classList.toggle("change");
+        let d = document.getElementById('myNav');
+        if (d.className === "navbar__content") {
+            d.className += "menu__link";
+        } else {
+            d.className = "navbar__content";
+        }
+    }
+</script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/all.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>

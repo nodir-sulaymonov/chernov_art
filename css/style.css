@@ -95,6 +95,7 @@ header .container-fluid{
 	padding-bottom: 15px;
 }
 .leng__icon{
+	margin-left: 30px;
 	display: flex;
 }
 .leng__icon li:first-child{
@@ -396,18 +397,25 @@ textarea{
 /*  2 page. About  page */
 
 .about_artist_text{
-	width: 650px;
+	width: 100%;
 	text-align: left;
 	margin-top: 88px;
-	margin-left: 94px;
 }
 .about_second_part{
-	width: 647px;
+	width: 100%;
 	text-align: left;
+	margin-top: 60px;
+}
+.part2__second__image{
+	width: 100%;
 }
 .part_offer{
 	margin-top: 60px;
 	width: 100%;
+}
+.image__cent_part2{
+	width: 100%;
+	height: 100%;
 }
 .tittle_about_part3{
 	font-family: "Roboto";
@@ -418,9 +426,12 @@ textarea{
 	color: rgba(215, 35, 35, 0.86);
 }
 .about_four_part{
-	width: 680px;
+	width: 100%;
 	text-align: left;
 	margin-top: 60px;
+}
+.part2__four__image{
+	width: 100%;
 }
 .part_image{
 	margin-top: 60px;
@@ -435,8 +446,11 @@ textarea{
 	text-align: left;
 	margin-top: 60px;
 }
+.about__image_pilot{
+	width: 100%;
+}
 .part5_text{
-	width: 610px;
+	width: 100%;
 	text-align: left;
 	margin-top: 60px;
 }
@@ -445,9 +459,13 @@ textarea{
 
 .space_img{
 	margin: 30px auto;
+	width: 100%;
 }
 
 @media only screen and (max-width: 1199px) {
+	.leng__icon{
+		margin-left: 10px;
+	}
 	.menu__item a {
 		font-size: 14px;
 	}
@@ -467,6 +485,9 @@ textarea{
 @media screen and (max-width: 991px) {
 	.carousel__image{
 		width: 720px;
+	}
+	.leng__icon{
+		margin-left: 10px;
 	}
 	.logo-up{
 		font-size: 14px;
@@ -522,6 +543,18 @@ textarea{
 		padding: 30px 0;
 		align-items: flex-start;
 		border-radius: 4px;
+		animation-name: example;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+	}
+
+	@keyframes example {
+		from {
+			background: rgba(48, 56, 65, 0.3);
+		}
+		to {
+			background: rgba(48, 56, 65, 0.8);
+		}
 	}
 	.leng__icon li:first-child{
 		margin-left: 20px;
@@ -619,8 +652,15 @@ textarea{
 		transform: rotate(45deg) translate(-8px, -8px);
 	}
 	/*>>>>>>>>>>>>>>>>>>>*/
+
 }
 @media screen and (max-width: 575px) {
+	header{
+		height: 150px;
+	}
+	.brand_navbar{
+		padding: 8px;
+	}
 	.menu__link{
 		top: -22px;
 		width: 100%;
@@ -695,6 +735,13 @@ textarea{
 	}
 	.mobile__menu{
 		width: 50%;
+	}
+
+	/* page gallery  */
+
+	.space_img{
+		width: 280px;
+		height: 305px;
 	}
 }
 
